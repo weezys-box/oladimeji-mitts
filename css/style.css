@@ -155,6 +155,7 @@ a:hover {
 .container-showcase h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    line-height: 1.7;
 }
 
 .container-showcase .btn {
