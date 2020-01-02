@@ -469,6 +469,7 @@ p {
 .showcase-1 h1 {
     margin: 1rem 0;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .lead-1 {
@@ -740,6 +741,11 @@ a:hover {
 
     .profile-wrapper {
         width: 100%;
+    }
+
+
+    .showcase-1 h1 {
+        font-size: 1.2rem;
     }
 
 
