@@ -30,8 +30,10 @@ $('.bio').on('click', function () {
 })
 
 
-$('.logo').on('click', function () {
+$('.toggler').on('click', function () {
+
     $('.nav2').slideToggle();
+
 })
 
 

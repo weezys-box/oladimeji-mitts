@@ -55,6 +55,60 @@ body {
     color: #555;
 }
 
+/* hamburger */
+
+
+.hamburger {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hamburger Line */
+.hamburger>div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.hamburger>div::before,
+.hamburger>div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves Line Down */
+.hamburger>div::after {
+    top: 10px;
+}
+
+
+
+/* hamburger */
+
 
 .navbar {
     display: flex;
@@ -67,6 +121,18 @@ body {
     /* position: sticky;
     top: 0; */
 }
+
+
+.wraps {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gray;
+    justify-content: space-between;
+    padding: 0 1rem 0 0;
+    align-items: center;
+}
+
+
 
 
 .logo {
@@ -649,6 +715,29 @@ a:hover {
 
 }
 
+.socket {
+    position: relative;
+    /* border: 3px solid green; */
+
+    width: 30px;
+    height: 30px;
+    display: none;
+
+}
+
+
+.toggler {
+
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* MEDIA QUERY SMALL SCREENS */
@@ -675,14 +764,17 @@ a:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
-
-
+        /* height: 100%; */
+        /* overflow: hidden */
 
     }
 
     .logo {
+
         margin-bottom: 1rem;
     }
+
+
 
     .nav li {
         padding: 1rem;
@@ -752,6 +844,26 @@ a:hover {
         font-size: 1.1rem;
     }
 
+    .toggler {
+        display: block;
+
+    }
 
 
+    .carousel-item .lead {
+        font-style: 1rem;
+    }
+
+
+    .carousel-item .name {
+        font-size: 1.2rem;
+    }
+
+    .services {
+        font-size: 1.3rem;
+    }
+
+    .socket {
+        display: flex;
+    }
 }
