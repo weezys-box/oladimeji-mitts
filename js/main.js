@@ -46,3 +46,28 @@ $('.toggler').on('click', function () {
 //         console.log(bio[x].nextElementSibling);
 //     })
 // }
+
+
+let toggler = document.querySelector('.checkbox');
+
+let menuBar = document.querySelector('.bar');
+
+console.log(menuBar);
+
+toggler.addEventListener('click', res)
+
+console.log(toggler);
+
+
+function res() {
+    if (toggler.checked === true) {
+        console.log('checked');
+
+
+
+    } else {
+        console.log('unchecked')
+    }
+
+    menuBar.classList.toggle('spin');
+}
