@@ -30,11 +30,14 @@ $('.bio').on('click', function () {
 })
 
 
-$('.toggler').on('click', function () {
+// $('.toggler').on('click', function () {
 
-    $('.nav2').slideToggle();
+//     $('.nav2').slideToggle();
 
-})
+// })
+
+
+
 
 
 //text whatever
@@ -52,22 +55,31 @@ let toggler = document.querySelector('.checkbox');
 
 let menuBar = document.querySelector('.bar');
 
-console.log(menuBar);
-
-toggler.addEventListener('click', res)
-
-console.log(toggler);
 
 
-function res() {
-    if (toggler.checked === true) {
-        console.log('checked');
+// toggler.addEventListener('click', res)
+
+// console.log(toggler);
+
+
+// function res() {
+//     if (toggler.checked === true) {
+//         console.log('checked');
 
 
 
-    } else {
-        console.log('unchecked')
-    }
+//     } else {
+//         console.log('unchecked')
+//     }
 
-    menuBar.classList.toggle('spin');
-}
+//     menuBar.classList.toggle('spin');
+// }
+
+
+$(document).ready(function () {
+    $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function () {
+        $(this).toggleClass('open');
+
+        $('.nav2').slideToggle();
+    });
+});
