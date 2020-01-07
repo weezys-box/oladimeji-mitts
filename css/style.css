@@ -757,7 +757,7 @@ a:hover {
 
 #nav-icon1 {
 
-    width: 40px;
+    width: 30px;
     height: 30px;
 
     position: relative;
@@ -837,8 +837,8 @@ a:hover {
 }
 
 .image-holder p {
-    font-size: 1rem;
-    margin-left: 0.7rem;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
 }
 
 
