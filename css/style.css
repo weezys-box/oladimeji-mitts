@@ -825,6 +825,22 @@ a:hover {
 }
 
 
+.image-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+.image-holder p {
+    font-size: 1rem;
+    margin-left: 0.7rem;
+}
+
+
 
 
 
