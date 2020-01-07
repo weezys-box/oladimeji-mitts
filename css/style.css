@@ -870,6 +870,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
+        display: none;
         /* height: 100%; */
         /* overflow: hidden */
 
