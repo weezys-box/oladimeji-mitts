@@ -1047,4 +1047,12 @@ a:hover {
     #nav-icon1 {
         display: block;
     }
+
+    #form-contact {
+
+        grid-template-areas: 'name''email''subject''phone''message''submit';
+
+
+
+    }
 }
