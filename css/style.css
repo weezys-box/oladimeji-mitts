@@ -842,6 +842,57 @@ a:hover {
 }
 
 
+#form-contact {
+    display: grid;
+    grid-template-areas: 'name email''subject phone''message message''submit submit';
+    text-align: center;
+
+    margin-top: 2rem;
+    grid-gap: 1.2rem;
+
+
+}
+
+#form-contact .form-design {
+    padding: 0.7rem;
+
+
+
+}
+
+#form-contact #name {
+    grid-area: name;
+
+}
+
+#form-contact #email {
+    grid-area: email;
+}
+
+#form-contact #subject {
+    grid-area: subject;
+}
+
+#form-contact #phone {
+    grid-area: phone;
+}
+
+#form-contact #message {
+    grid-area: message;
+}
+
+#form-contact #submit {
+    grid-area: submit;
+}
+
+.btn-var {
+
+    margin: 2rem auto;
+    background-color: var(--primary-color);
+
+}
+
+
 
 
 
